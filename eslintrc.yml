@@ -1,0 +1,43 @@
+env:
+  browser: true
+  commonjs: true
+  es6: true
+extends:
+  - eslint:recommended
+  - google
+parser: babel-eslint
+parserOptions:
+  ecmaVersion: 8
+  ecmaFeatures:
+    experimentalObjectRestSpread: true
+    jsx: true
+  sourceType: module
+plugins:
+  - flowtype
+  - import-order
+  - react
+rules:
+  indent:
+    - error
+    - 2
+  linebreak-style:
+    - off
+  max-len: [2, {code: 120, tabWidth: 2, ignoreUrls: true}]
+  quotes:
+    - error
+    - single
+  semi:
+    - error
+    - never
+
+  no-console: 0
+  no-unused-vars:
+    - 2
+    - args: 'none'
+      varsIgnorePattern: "_|React"
+
+  require-jsdoc:
+    - warn
+
+  "import-order/import-order": 2
+  "react/jsx-uses-vars": 1
