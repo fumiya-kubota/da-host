@@ -1,0 +1,7 @@
+src
+web
+.gitignore
+eslintrc.yml
+requirements.txt
+webpack.config.babel.js
+yarn.lock
