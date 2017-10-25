@@ -15,7 +15,8 @@
     "lint:css": "stylelint src/**/*.css",
     "test": "ava",
     "test:ci": "yarn typecheck & yarn lint && yarn lint:css && yarn test:cover",
-    "test:cover": "nyc --reporter=lcov --reporter=text yarn test"
+    "test:cover": "nyc --reporter=lcov --reporter=text yarn test",
+    "library": "babel src/js/ --out-dir lib --ignore main.js"
   },
   "dependencies": {
     "history": "^4.6.1",
@@ -119,5 +120,8 @@
       "babel-register",
       "mock-css-modules"
     ]
-  }
+  },
+  "files": [
+    "lib"
+  ]
 }

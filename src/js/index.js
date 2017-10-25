@@ -1,9 +1,3 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import Main from './components/main'
+import AwesomeComponent from './components/AwesomeComponent'
 
-
-ReactDOM.render(
-  <Main/>,
-  document.getElementById('main')
-)
+module.exports = {AwesomeComponent}

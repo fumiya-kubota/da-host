@@ -11,20 +11,15 @@ const BASE_PLUGINS = [
   })
 ]
 
+
 module.exports = {
-  entry: process.env.NODE_ENV === 'production'
-  ? [
-    './src/js/index.js'
-  ]
-  : [
-    'react-hot-loader/patch',
-    'webpack-dev-server/client?http://localhost:3355',
-    'webpack/hot/only-dev-server',
-    './src/js/index.js'
-  ],
+  entry: {
+    "web/static/main.bundle": './src/js/main.js',
+    "dist/index": './src/js/index.js'
+  },
   output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'web/static'),
+    filename: '[name].js',
+    path: path.resolve(__dirname),
     publicPath: '/'
   },
   devServer: {
