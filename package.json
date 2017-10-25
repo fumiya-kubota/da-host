@@ -1,7 +1,7 @@
 {
   "name": "da-host",
   "version": "0.0.1",
-  "main": "index.js",
+  "main": "lib/index.js",
   "repository": "git@github.com:fumiya-kubota/da-host.git",
   "author": "fumiya-kubota <fumiya.kubota@glucose.jp>",
   "license": "MIT",
