@@ -1,9 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import AwesomeComponent from './components/AwesomeComponent'
-
+import Container from './components/Container'
 
 ReactDOM.render(
-  <AwesomeComponent/>,
+  <div>
+    <AwesomeComponent/>
+    <Container/>
+  </div>,
   document.getElementById('main')
 )
